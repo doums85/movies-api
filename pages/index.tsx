@@ -5,6 +5,7 @@ import {
   Container,
   ListGroup,
 } from 'react-bootstrap';
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -30,11 +31,11 @@ export default function Home() {
               `/api/movies`
             </p>
             <Button>
-              <a
+              <Link
                 className="text-decoration-none text-white"
                 href="/api/movies">
                 See
-              </a>
+              </Link>
             </Button>
           </ListGroup.Item>
           <ListGroup.Item>
@@ -43,11 +44,11 @@ export default function Home() {
               `/api/movies/idMovie`
             </p>
             <Button>
-              <a
+              <Link
                 className="text-decoration-none text-white"
                 href="/api/movies/6450e068fe038410e3efbf39">
                 See
-              </a>
+              </Link>
             </Button>
           </ListGroup.Item>
         </ListGroup>
