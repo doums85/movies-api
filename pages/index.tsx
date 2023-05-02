@@ -40,6 +40,21 @@ export default function Home() {
           </ListGroup.Item>
           <ListGroup.Item>
             <p>
+              Search a movie use this endpoint :
+              `/api/movies?title=beyond`
+            </p>
+            <Button>
+              <Link
+                className="text-decoration-none text-white"
+                href="/api/movies?title=Beyond%20Earth">
+                See
+              </Link>
+            </Button>
+          </ListGroup.Item>
+
+
+          <ListGroup.Item>
+            <p>
               Get a movie use this endpoint :
               `/api/movies/idMovie`
             </p>
